@@ -6,7 +6,5 @@ Pensando dessa forma, a Rossmann, uma das maiores redes de drogarias da Europa, 
 
 Para resolver o problema utilizei algorítmos de Machine Learning aplicados a um problema de regressão de séries temporais.
 
-Obtive um erro médio percentual de 10% do valor, que é 50% menor do que se apenas aplicássemos a média de vendas dos últimos tempos.
-
-Dessa forma, esse modelo poderia agregar bastante na tomada de decisão da empresa, antes feita por uma análise mais simples.
+In progress..
 
