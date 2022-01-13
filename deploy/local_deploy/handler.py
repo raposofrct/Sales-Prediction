@@ -3,8 +3,8 @@ from Rossmann import rossmann
 import pickle
 import pandas as pd
 
-pipeline = rossmann() # load the created class for data modeling and preparing
-model = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/model.pickle', 'rb')) # load model
+pipeline = rossmann()        
+model = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/local_deploy/model.pickle', 'rb'))
 
 app = Flask(__name__)
 

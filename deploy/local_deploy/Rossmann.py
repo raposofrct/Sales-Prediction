@@ -9,10 +9,10 @@ initial_data = pd.read_csv('/Users/nando/Comunidade DS/ds_em_producao/data/inita
 class rossmann(object):
     
     def __init__(self):
-        self.store_type_label_encoder = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/store_type_label_encoder.pickle','rb'))
-        self.promo_interval_target_encoder = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/promo_interval_target_encoder.pickle','rb'))
-        self.min_max_scaler = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/min_max_scaler.pickle','rb'))
-        self.robust_scaler = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/robust_scaler.pickle','rb'))
+        self.store_type_label_encoder = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/local_deploy/store_type_label_encoder.pickle','rb'))
+        self.promo_interval_target_encoder = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/local_deploy/promo_interval_target_encoder.pickle','rb'))
+        self.min_max_scaler = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/local_deploy/min_max_scaler.pickle','rb'))
+        self.robust_scaler = pickle.load(open('/Users/nando/Comunidade DS/ds_em_producao/deploy/local_deploy/robust_scaler.pickle','rb'))
 
     def data_cleaning(self,dados):
         ## 1.1 Rename Columns and Values
@@ -260,4 +260,4 @@ class rossmann(object):
         
         original_data['prediction'] = np.expm1( pred )
         
-        return original_data.to_json( orient='records', date_format='iso' ) # return a df with the original imput and it's prediction
+        return original_data.to_json( orient='records', date_format='iso' ) # return a df with the original imput and it's predictionprediction
