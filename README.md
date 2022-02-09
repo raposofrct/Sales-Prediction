@@ -14,6 +14,8 @@ Para solucionar o problema de negócio se faz necessário o uso de **algoritmos 
 
 Esse algoritmo deverá ser colocado **em produção na nuvem através de uma API**. 
 
+**Tecnologias Utilizadas:** Python, Git e Github, bibliotecas de manipulação de dados (Pandas, Numpy..), bibliotecas de visualização de dados (Seaborn e Matplotlib), bibliotecas de machine learning (Sklearn, XGBoost...) e bibliotecas para criação da API e deploy (Flask e Pickle) e Heroku para hospedar nossa API.
+
 ### Data Description
 
 Os dados são compostos por 1115 lojas em um período de 2013 até agosto de 2015 com diversas variáveis, inclusive o target: 'Sales'.
