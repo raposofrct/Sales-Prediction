@@ -4,19 +4,25 @@ Qual empresa nunca se viu na necessidade de estimar o seu volume de vendas futur
 
 A previsão desse tipo de variável é muito comum no mundo dos negócios, pois é essa expectativa que direciona as grandes decisões de uma empresa.
 
-### Entendimento do Problema
+## Entendimento do Problema
 A Rossmann possui mais de 3.000 drogarias em 7 países na Europa. Atualmente, os gerentes de cada loja têm a tarefa de prever suas vendas diárias com seis semanas de antecedência. As vendas da loja são influenciadas por muitos fatores, desde promoções até distância de competidores. Com milhares de gerentes individuais prevendo vendas, a precisão dos resultados pode ser bastante variada. 
 
 **O grande problema, então, é o fato das previsões terem uma precisão muito variada, não trazendo tanta segurança ao negócio.**
 
-### Solução
+## Solução
 Para solucionar o problema de negócio se faz necessário o uso de **algoritmos de Machine Learning (Time Series Regression)**
 
 Esse algoritmo deverá ser colocado **em produção na nuvem através de uma API**. 
 
-**Tecnologias Utilizadas:** Python, Git e Github, bibliotecas de manipulação de dados (Pandas, Numpy..), bibliotecas de visualização de dados (Seaborn e Matplotlib), bibliotecas de machine learning (Sklearn, XGBoost...) e bibliotecas para criação da API e deploy (Flask e Pickle) e Heroku para hospedar nossa API.
+**Tecnologias Utilizadas:** 
+* Python, Git e Github
+* Bibliotecas de manipulação de dados (Pandas, Numpy..)
+* Bibliotecas de visualização de dados (Seaborn e Matplotlib)
+* Bibliotecas de machine learning (Sklearn, XGBoost...)
+* Bibliotecas para deploy e criação da API (Flask e Pickle)
+* Heroku para hospedar nossa API na cloud.
 
-### Data Description
+## Data Description
 
 Os dados são compostos por 1115 lojas em um período de 2013 até agosto de 2015 com diversas variáveis, inclusive o target: 'Sales'.
  
@@ -50,7 +56,7 @@ Promo2Since[ Week / Year ] - Fornece a semana e o ano, em duas variáveis distin
 PromoInterval - Descreve os intervalos em que a Promo2 é iniciada, nomeando os meses em que a promoção é reiniciada. Por exemplo, "fevereiro, maio, agosto, novembro" significa que a Promo2 começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja
 ```
 
-### Model Performance
+## Model Performance
 
 #### Modelo Baseline
  
@@ -71,7 +77,7 @@ Agora a empresa pode ter muito mais segurança nas suas expectativas futuras de 
 Esse modelo está disponível na cloud, podendo ser acessado <a href=https://reqbin.com/oqcbaldp target="_blank">aqui</a>
 (É só mudar as variáveis na aba 'Content')
 
-### Insights
+## Insights
 
 Além de uma maior precisão nas previsões, **esse projeto conseguiu gerar insights de grande valor para o negócio**. Vou listar apenas três dos diversos observados ao longo do projeto.
 
@@ -103,7 +109,7 @@ Abaixo está a análise do volume de vendas por cada consumidor entre dias de se
 
 <img src="https://i.imgur.com/9acF04K.png"/>
 
-### Conclusão
+## Conclusão
 
 Esse projeto nos **rendeu diversos insights valiosos para o negócio, que vão possibilitar a Rossmann tomar decisões mais acertadas** para aumentar seu faturamento, e **possibilitou que a empresa conseguisse ter mais segurança na previsão de vendas, com uma diminuição de 32% no erro médio** comparado ao modelo base.
 
