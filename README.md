@@ -48,3 +48,27 @@ Promo2Since[ Week / Year ] - Fornece a semana e o ano, em duas variáveis distin
 PromoInterval - Descreve os intervalos em que a Promo2 é iniciada, nomeando os meses em que a promoção é reiniciada. Por exemplo, "fevereiro, maio, agosto, novembro" significa que a Promo2 começa em fevereiro, maio, agosto, novembro de qualquer ano para aquela loja
 ```
 
+### Model Performance
+
+#### Modelo Baseline
+ 
+|       Model Name          |        MAE          |      MAPE      |        RMSE        |
+|:-------------------------:|:-------------------:|:--------------:|:------------------:|
+| Baseline                  |  1440          | 22.8%      |       1925        |
+
+#### Tuned XGBoost Regressor (Our model)
+
+|       Model Name          |        MAE          |      MAPE      |        RMSE        |
+|:-------------------------:|:-------------------:|:--------------:|:------------------:|
+| Baseline                  |  979          | 14.6%      |       1413        |
+
+Vemos uma precisão claramente maior, um erro médio com diminuição de 32%!
+
+Agora a empresa pode ter muito mais segurança nas suas expectativas futuras de faturamento!
+
+Esse modelo está disponível no cloud, podendo ser acessado através desse <a href=https://reqbin.com/oqcbaldp target="_blank">link</a>
+(É só mudar as variáveis na aba 'Content')
+
+### Insights
+
+Além de uma maior precisão nas previsões, esse projeto conseguiu gerar insights de grande valor para o negócio.
