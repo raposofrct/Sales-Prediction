@@ -66,7 +66,7 @@ Vemos uma precisão claramente maior, **um erro médio com diminuição de 32%!*
 
 Agora a empresa pode ter muito mais segurança nas suas expectativas futuras de faturamento!
 
-Esse modelo está disponível na cloud, podendo ser acessado através desse <a href=https://reqbin.com/oqcbaldp target="_blank">link</a>
+Esse modelo está disponível na cloud, podendo ser acessado <a href=https://reqbin.com/oqcbaldp target="_blank">aqui</a>
 (É só mudar as variáveis na aba 'Content')
 
 ### Insights
